@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-white: #ffffff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(images/perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+header .logo img {
+  height: 100px;
+}
+
+.sign select{
+  background: transparent;
+  margin: 0 20px;
+  width: 125px;
+  height: 34px;
+  border-radius: 4px;
+  /* border: none; */
+  color: var(--color-white);
+  font-size: 17px;
+}
+.sign select option {
+  text-align: center;
+}
+
+.sign button {
+  width: 110px;
+  height: 34px;
+  border-radius: 4px;
+  border: none;
+  background: #e50914;
+  color: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+.sign button:hover {
+  background: #c11119;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+}
+
+.box .text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.box .text h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--color-white);
+}
+
+.box .text p {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: var(--color-white);
+}
+
+.box .text1 p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+.input {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.input input {
+  height: 56px;
+  width: 400px;
+  padding-left: 10px;
+  background: #00000050;
+  border: 1px solid gray;
+  margin: 0 10px;
+  border-radius: 4px;
+  outline: var(--color-white);
+  color: var(--color-white);
+  font-size: 17px;
+  
+}
+
+
+.input input::placeholder {
+  color: #ffffff50;
+  font-size: 17px;
+}
+
+.input button {
+  height: 56px;
+  width: 175px;
+  font-size: 30px;
+  border-radius: 4px;
+  border: none;
+  background: #e50914;
+  color: var(--color-white);
+  transition: 0.4s all;
+  cursor: pointer;
+}
+.input button:hover {
+  background: #c11119;
+}
+
+.line {
+  width: 100%;
+  height: 8px;
+  background: #333;
+}
+
+.section2,
+.section3,
+.section4 {
+  height: 530px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 .left {
+  width: 50%;
+  color: var(--color-white);
+  margin-left: 55px;
+}
+.section2 .left h1 {
+  font-size: 48px;
+}
+.section2 .left p {
+  font-size: 22px;
+}
+
+.section2 .images img {
+  width: 500px;
+}
+
+.section2 .images {
+  position: relative;
+  z-index: 10;
+}
+.section2 video {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: -9;
+}
+.section3 .images {
+  padding-left: 3rem;
+  position: relative;
+}
+.section3 .images img {
+  width: 500px;
+}
+
+.section3 .left {
+  color: var(--color-white);
+}
+.section3 .left h1 {
+  font-size: 48px;
+}
+.section3 .left p {
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.section3 .card {
+  margin-right: 15px;
+  position: absolute;
+  bottom: 15px;
+  right: 50px;
+  transform: translate(-50px, -15px);
+  background: #000;
+  width: 282px;
+  height: 105px;
+  border: 2px solid #595959;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.section3 .card img {
+  margin-left: 15px;
+  width: 58px;
+}
+.section3 .card h4,
+p {
+  margin-left: 15px;
+  color: var(--color-white);
+}
+.section3 .card p {
+  font-size: 0.875rem;
+  color: #0071eb;
+}
+
+.section4 .left h1 {
+  color: var(--color-white);
+  font-size: 3rem;
+}
+
+.section4 .left p {
+  font-size: 1.5rem;
+}
+
+.section4 .images img {
+  width: 508px;
+  height: 381px;
+}
+
+.position {
+  position: relative;
+  z-index: 10;
+}
+.section4 .video {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  overflow: hidden;
+  z-index: -10;
+}
+.section4 .video video {
+  width: 315px;
+}
+
+.section5{
+  height: 1000px;
+  background: #000;
+}
+
+.section5 .header{
+  color: var(--color-white);
+  text-align: center;
+  padding-top: 50px;
+  
+}
+.section5 .header h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.section5 ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section5 ul li{
+  background: #2d2d2d;
+  margin: 5px 0;
+  width: 1028px;
+  height: 84px;
+  line-height: 84px;
+  padding-left: 25px;
+  transition: .4s all;
+  cursor: pointer;
+}
+.section5 ul li:hover{
+  background: #414141;
+}
+.section5 ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+.section5 ul li a span{
+  float: right;
+  font-size: 72px;
+  font-weight: 100;
+  margin-right: 25px;
+  
+}
+.section5 P{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.section5 .input{
+  margin-top: 50px;
+  
+}
+
+.footer{
+  height: 300px;
+  background: #000;
+  padding: 80px 130px;
+  
+  
+}
+
+.footer .number p{
+  color: #ffffff90;
+  font-size: smaller;
+}
+.footer .number a{
+  color: #ffffff99;
+  font-size: 16px;
+}
+
+.footer .card{
+  padding: 35px 0;
+  display: flex;
+}
+
+.footer .card li{
+  margin: 10px 0;
+  
+}
+.footer .card ul:nth-last-child(3), 
+.footer .card ul:nth-last-child(1), 
+.footer .card ul:nth-last-child(2){
+  margin-left: 125px;
+}
+
+
+.footer .card li a{
+  font-size: 13px ;  
+  color: #ffffff99;
+  list-style: none;
+
+}
+select{
+  background: #33333395;
+  width: 125px;
+  height: 34px;
+  border-radius: 4px;
+  color: var(--color-white);
+  font-size: 17px;
+}
+  select option {
+  text-align: center;
+}
+
+p{
+  margin: 10px 0;
+  color: #ffffff99;
+  font-size: 13px;
+}
